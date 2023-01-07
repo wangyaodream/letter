@@ -22,7 +22,7 @@ def test(r):
         "name": "test string!",
         "debug_value": None,
         "get_value": [1, 2, 3, 4, 5],
-        "get": str(r.GET)
+        "get": str(r.GET.get('name'))
     }
     return render(r, "polls/test.html", result)
 
